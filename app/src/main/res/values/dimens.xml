@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_margin">8dp</dimen>
+    <dimen name="header1_top_margin">18dp</dimen>
+    <dimen name="header1_start_margin">12dp</dimen>
+    <dimen name="header1_bottom_margin">16dp</dimen>
+
+    <dimen name="header1_text_size">24sp</dimen>
+
+    <dimen name="category_item_height" >150dp</dimen>
+    <dimen name="category_item_text_size">30sp</dimen>
+
+    <dimen name="product_item_text_size">20sp</dimen>
+
+
+    <dimen name="default_padding">4dp</dimen>
+
+</resources>
