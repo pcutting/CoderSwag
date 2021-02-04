@@ -4,7 +4,7 @@ import com.nevie.coderswag.R
 import com.nevie.coderswag.models.CategoryModel
 import com.nevie.coderswag.models.ProductModel
 
-object CodeSwagRepository {
+object CoderSwagRepository {
     private val categories = listOf(
             CategoryModel("Shirts", R.drawable.shirts),
             CategoryModel("Hats", R.drawable.hats),
@@ -34,15 +34,25 @@ object CodeSwagRepository {
     )
 
     private  val digital = emptyList<ProductModel>()
+//
+   fun getCategories()= categories
+//
+//    fun getShirts() = shirts
+//
+//    fun getHats() = hats
+//
+//    fun getHoodies() = hoodies
+//
+//    fun getDigital() = digital
 
-    fun getCategories()= categories
-
-    fun getShirts() = shirts
-
-    fun getHats() = hats
-
-    fun getHoodies() = hoodies
-
-    fun getDigital() = digital
+    fun getProduct(category: String) : List<ProductModel> {
+        return when (category) {
+            "Shirts" -> shirts
+            "Hats" -> hats
+            "Hoodies" -> hoodies
+            "Digital" -> digital
+            else -> emptyList()
+        }
+    }
 
 }
